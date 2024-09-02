@@ -53,6 +53,10 @@
 		<name>Layout</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<types>
 		<members>N26_Product_Insight_Permission_Set</members>
 		<name>PermissionSet</name>
 	</types>
