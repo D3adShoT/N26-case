@@ -1,36 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <types>
-        <members>*</members>
-        <name>ApexClass</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexComponent</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTestSuite</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>AuraDefinitionBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>LightningComponentBundle</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>StaticResource</name>
-    </types>
-    <version>61.0</version>
+	<types>
+		<members>*</members>
+		<name>ApexClass</name>
+	</types>
+	<!--<types>
+		<members>Account.Active__c</members>
+		<members>Account.CustomerPriority__c</members>
+		<members>Account.NumberofLocations__c</members>
+		<members>Account.SLAExpirationDate__c</members>
+		<members>Account.SLASerialNumber__c</members>
+		<members>Account.SLA__c</members>
+		<members>Account.UpsellOpportunity__c</members>
+		<members>Case.EngineeringReqNumber__c</members>
+		<members>Case.PotentialLiability__c</members>
+		<members>Case.Product__c</members>
+		<members>Case.SLAViolation__c</members>
+		<members>Contact.Languages__c</members>
+		<members>Contact.Level__c</members>
+		<members>Goal.OrigGoalId__c</members>
+		<members>Lead.CurrentGenerators__c</members>
+		<members>Lead.NumberofLocations__c</members>
+		<members>Lead.Primary__c</members>
+		<members>Lead.ProductInterest__c</members>
+		<members>Lead.SICCode__c</members>
+		<members>Metric.OrigMetricId__c</members>
+		<members>Opportunity.CurrentGenerators__c</members>
+		<members>Opportunity.DeliveryInstallationStatus__c</members>
+		<members>Opportunity.MainCompetitors__c</members>
+		<members>Opportunity.OrderNumber__c</members>
+		<members>Opportunity.TrackingNumber__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Case_Record_Page2</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>GlobalValueSet</name>
+	</types>
+	<types>
+		<members>Case-Case Layout</members>
+		<members>Contact-Contact %28Marketing%29 Layout</members>
+		<members>Contact-Contact %28Sales%29 Layout</members>
+		<members>Contact-Contact %28Support%29 Layout</members>
+		<members>Contact-Contact Layout</members>
+		<members>Pricebook2-Price Book Layout</members>
+		<members>PricebookEntry-Price Book Entry Layout</members>
+		<members>Product2-Product Layout</members>
+		<members>ServiceContract-Service Contract Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>N26_Product_Insight_Permission_Set</members>
+		<name>PermissionSet</name>
+	</types>-->
+	<version>60.0</version>
 </Package>
