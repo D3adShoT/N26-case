@@ -54,6 +54,7 @@ public class ContactWebServiceTest {
         );
     }
 
+    //Test the usecase to fetch Contacts information with active contract with concerned product included.
     @isTest
     static void testGetContactWithActiveContracts() {
         RestRequest req = new RestRequest();
@@ -64,7 +65,8 @@ public class ContactWebServiceTest {
 
         System.assertEquals(true, result.ContractExist, 'Contract should exist for the contact with UUID001.');
     }
-
+	
+    //Test the usecase to fetch Contacts information with no active contract with concerned product included.
     @isTest
     static void testGetContactWithOutActiveContracts() {
         RestRequest req = new RestRequest();

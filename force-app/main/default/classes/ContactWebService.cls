@@ -1,5 +1,9 @@
 @RestResource(urlMapping='/ContactService/*')
 global class ContactWebService {
+    /*
+    * Method Name		   : getContact
+    * Funtion Description : Method is envoked via a external get calls with UUID in request URI.
+    */
     @HttpGet
     global static ResponseWrapper getContact(){
         RestRequest req = RestContext.request;
@@ -8,6 +12,11 @@ global class ContactWebService {
         return returnMap;
     }
     
+    /*
+    * Method Name		   : generateResponse
+    * Method Prams        : String - UUID Id
+    * Funtion Description : Method is used to fetch the Product data either from an Active Contract or from product Catalog.
+    */
     private static ResponseWrapper generateResponse(String uId){
         ResponseWrapper returnMap = new ResponseWrapper();
         Contact con = DataFactory.getContactDetailsByUUID(uId);

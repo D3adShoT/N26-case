@@ -1,4 +1,5 @@
 public class DataFactory {
+    
     public static List<ServiceContract> getContracts(String ProductId, String AccountId, String Country){
         return [Select Id,Term,Service_Country__c,(Select Id,Product2Id,Product2.Name,ATM_Fee_in_other_currencies__c,Card_Replacement_Cost__c,Cost_per_Calendar_Month__c,
                                                                                                CurrencyIsoCode from ContractLineItems where Product2Id =: ProductId) from ServiceContract 

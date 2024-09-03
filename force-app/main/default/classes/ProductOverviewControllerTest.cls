@@ -52,7 +52,8 @@ public class ProductOverviewControllerTest {
             testContract, testPBE2, 500, 200, 300
         );
     }
-
+	
+    //Test the usecase of Contacts with active contract with concerned product included.
     @isTest
     static void testGetProductDataWithActiveContracts() {
         Contact con = [SELECT Id FROM Contact WHERE NAME = 'Test Service Contact' LIMIT 1];
@@ -62,6 +63,7 @@ public class ProductOverviewControllerTest {
         System.assertEquals(true, (Boolean)result.get(Constants.CONTRACT_EXISTS), 'Contract with applicable service product should exist for the service contact.');
     }
     
+    //Test the usecase of Contacts with no active contract with concerned product included.
     @isTest
     static void testGetProductDataWithOutActiveContracts() {
         Contact con = [SELECT Id FROM Contact WHERE NAME = 'Test Non Service Contact' LIMIT 1];

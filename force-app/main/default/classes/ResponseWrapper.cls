@@ -1,3 +1,6 @@
+/*
+ * Wrapper class to be used in ContactWebService to define the response body.
+ */
 global class ResponseWrapper {
     global String Home_Country{get; set;}
     global Boolean ContractExist{get; set;}
@@ -9,6 +12,4 @@ global class ResponseWrapper {
     global Integer ContractTerm{get; set;}
     global Id ContractId{get; set;}
     global Id ProductId{get; set;}
-    
-    //global Map<String,Object> ProductInformation{get; set;}
 }
